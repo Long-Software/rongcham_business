@@ -40,30 +40,33 @@ const AttendeePage = () => {
   ]
   return (
     <TableCard title='List Attendee'>
-      <table className='table bg-white text-black'>
-        <thead>
-          <tr className='bg-warning'>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Pin Code</th>
-            <th>Detail</th>
-          </tr>
-        </thead>
-        <tbody>
-          {attendees.map(attendee => (
-            <tr key={attendee.id}>
-              <td>{attendee.id}</td>
-              <td>{attendee.name}</td>
-              <td>{attendee.pin}</td>
-              <td>
-                <Link className='text-secondary underline' href='/'>
-                  Edit
-                </Link>
-              </td>
+      <>
+        <table className='table bg-white text-black'>
+          <thead>
+            <tr className='bg-warning'>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Pin Code</th>
+              <th>Detail</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {attendees.map(attendee => (
+              <tr key={attendee.id}>
+                <td>{attendee.id}</td>
+                <td>{attendee.name}</td>
+                <td>{attendee.pin}</td>
+                <td>
+                  <Link className='text-secondary underline' href='/'>
+                    Edit
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <Link href='/counter-management/add-attendee'>Add Attendee</Link>
+      </>
     </TableCard>
     // <div className='flex w-full justify-center'>
     //   <Card title='User Queue' className='bg-primary text-white w-1/2'>
