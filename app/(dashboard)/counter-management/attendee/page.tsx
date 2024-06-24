@@ -1,5 +1,4 @@
-import Card from '@/components/Card'
-import TableCard from '@/components/TableCard'
+import TableCard from '@/components/Card/TableCard'
 import Link from 'next/link'
 import React from 'react'
 
@@ -57,7 +56,9 @@ const AttendeePage = () => {
                 <td>{attendee.name}</td>
                 <td>{attendee.pin}</td>
                 <td>
-                  <Link className='text-secondary underline' href='/'>
+                  <Link
+                    className='text-secondary underline'
+                    href={`/counter-management/attendee/${attendee.id}`}>
                     Edit
                   </Link>
                 </td>
@@ -65,14 +66,15 @@ const AttendeePage = () => {
             ))}
           </tbody>
         </table>
-        <Link href='/counter-management/add-attendee'>Add Attendee</Link>
+        <div className='flex w-full justify-end'>
+          <Link
+            href='/counter-management/add-attendee'
+            className='btn my-3 mr-5 bg-black rounded-3xl'>
+            Add Attendee
+          </Link>
+        </div>
       </>
     </TableCard>
-    // <div className='flex w-full justify-center'>
-    //   <Card title='User Queue' className='bg-primary text-white w-1/2'>
-
-    //   </Card>
-    // </div>
   )
 }
 

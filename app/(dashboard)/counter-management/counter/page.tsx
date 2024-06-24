@@ -1,4 +1,4 @@
-import TableCard from '@/components/TableCard'
+import TableCard from '@/components/Card/TableCard'
 import Link from 'next/link'
 import React from 'react'
 

@@ -1,34 +1,31 @@
-import Card from '@/components/Card'
-import LinkCard from '@/components/LinkCard'
-import Navbar from '@/components/Navbar'
-import Link from 'next/link'
+import LinkCard from '@/components/Card/LinkCard'
 import React from 'react'
 
 const CounterManagementPage = () => {
   const links: { label: string; href: string; description: string }[] = [
     // { label: 'add-attendee', href: 'counter-management/add-attendee', description: '' },
     {
-      label: 'attendee',
+      label: 'Attendee',
       href: 'counter-management/attendee',
       description: 'List and add attendees.'
     },
     {
-      label: 'add-category',
+      label: 'Add Category',
       href: 'counter-management/add-category',
       description: 'The mid-market subscription plan allows up to 14 categories.'
     },
     {
-      label: 'category',
+      label: 'Category',
       href: 'counter-management/category',
       description: 'Listing all categories in a business.'
     },
     {
-      label: 'add-counter',
+      label: 'Add Counter',
       href: 'counter-management/add-counter',
       description: 'The mid-market subscription plan allows up to 14 counters.'
     },
     {
-      label: 'counter',
+      label: 'Counter',
       href: 'counter-management/counter',
       description: 'Listing all counters in a business.'
     }
