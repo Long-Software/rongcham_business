@@ -12,10 +12,10 @@ const EditAttendeePage = ({ params }: Params) => {
       <form>
         <Input type='text' label='Attendee Name' value='Long' />
         <Input type='text' label='PIN' className='mt-5' value='123' />
-        <button type='submit' className='btn btn-secondary text-white px-8 mt-5'>
+        <button type='submit' className='btn btn-secondary text-white px-5 mr-5 mt-5'>
           Update Attendee
         </button>
-        <button className='btn btn-error text-white px-8 mt-5'>
+        <button className='btn btn-error text-white px-5 mt-5'>
           Delete Attendee
         </button>
       </form>

@@ -39,6 +39,7 @@ const AddCounterPage = () => {
           disable='Choose Category'
           name='secondary_category_id'
         />
+        <button className='w-full bg-primary text-white py-3 mt-5 rounded-full'>Generate Access Code</button>
         <button type='submit' className='btn btn-secondary text-white px-8 mt-5'>
           Add Counter
         </button>

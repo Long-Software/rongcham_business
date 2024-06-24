@@ -55,7 +55,7 @@ const AttendeePage = () => {
               <td>{counter.access_code}</td>
               <td>{counter.attendee_name}</td>
               <td>
-                <Link className='text-secondary underline' href='/'>
+                <Link className='text-secondary underline' href={`/counter-management/counter/${counter.counter_number}`}>
                   Edit
                 </Link>
               </td>

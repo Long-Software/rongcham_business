@@ -10,9 +10,10 @@ const EditCategoryPage = ({ params }: Params) => {
       <form>
         <Input type='text' label='Category Name' value='Account Opening' />
         <Input type='text' label='Acronym' className='mt-5' value='AO' />
-        <button type='submit' className='btn btn-secondary text-white px-8 mt-5'>
+        <button type='submit' className='btn btn-secondary text-white px-5 mr-5 mt-5'>
           Update Category
         </button>
+        <button className='btn btn-error text-white px-5 mt-5'>Delete Category</button>
       </form>
     </div>
   )

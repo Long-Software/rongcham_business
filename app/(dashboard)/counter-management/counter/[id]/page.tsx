@@ -42,9 +42,11 @@ const EditCounterPage = ({ params }: Params) => {
           disable='Choose Category'
           name='secondary_category_id'
         />
-        <button type='submit' className='btn btn-secondary text-white px-8 mt-5'>
-          Add Counter
+        <button className='w-full btn btn-outline border-error text-error py-3 mt-5 rounded-full'>Generate Access Code</button>
+        <button type='submit' className='btn btn-secondary text-white px-5 mr-5 mt-5'>
+          Update Counter
         </button>
+        <button className='btn btn-error text-white px-5 mt-5'>Delete Counter</button>
       </form>
     </div>
   )
