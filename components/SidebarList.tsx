@@ -18,7 +18,7 @@ const SidebarList = () => {
   const links: LinkList[] = [
     { href: '/', label: 'Dashboard', icon: <BriefcaseIcon width={24} /> },
     {
-      href: '/display-management',
+      href: '/display-management',  
       label: 'Display Management',
       icon: <ComputerDesktopIcon width={24} />
     },
